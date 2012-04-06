@@ -9,7 +9,8 @@ Layout: Content-Sidebar
 	width: 100%;
 }
 #content {
-	margin: 0 25% 0 0;
+	margin: 0 28% 0 0;
+	padding:10px;
 }
 #secondary { /* Sidebar 1 */
 	float: right;
@@ -23,3 +24,75 @@ Layout: Content-Sidebar
 	clear: both;
 	width: 100%;
 }
+
+/* KDWolski Mods
+----------------------------------------------- */
+body{background:url(../img/top-bar.png) repeat-x; font-family:Georgia serif;}
+.entry-content, .entry-summary {font-size:125%; line-height:175%;}
+header{height:100px;}
+.site-title a{border-bottom:none; font-size:24px; }
+.main-navigation ul{float: right; font-size:18px;}
+.main-navigation ul li{ margin:0; padding:0 10px 0 10px; border-right:1px solid #ccc;}
+.main-navigation ul li:last-child{border:none;}
+.main-navigation ul li a:hover{color:#ef4722;}
+div.site-description{font-size:22px;}
+#page{width:80%; margin:0 auto;}
+a,a:active,a:visited{color:#ef4722; border-bottom:1px dotted #ccc; text-decoration: none;}
+a:hover{color:#c83b1c;}
+
+.main-navigation li{margin:0 5px 0 5px;}
+.main-navigation li a{color:#000; border-bottom:none;}
+
+/** Headings **/
+h1,h2,h3,h4, .main-navigation, .site-description{font-family: 'Lustria', serif;}
+h1{font-size:200%; font-weight:bold;}
+aside h1{font-size:125%;}
+.entry-title a{color:#333; border-bottom:none;}
+h1.page-title{color:#ccc; font-size:140%;}
+
+/** Content **/
+div.entry-content{margin-top:0;}
+article.post{ padding-bottom:4%; border-bottom:3px solid #ccc;}
+
+/** Sidebar **/
+#secondary{ padding-top: 5%;}
+
+/** Category Widget **/
+aside.widget_categories ul{list-style-type: none; margin:0; padding:0px}
+aside.widget_categories ul li{
+	background: #eee;
+	border-radius:5px;
+	padding:4px;
+	width:auto;
+	height:auto;
+	float:left;
+	margin:5px 0 5px 5px;
+}
+aside.widget_categories ul li:hover,
+aside.widget_categories ul li.current-cat{background:#EF4722;}
+aside.widget_categories ul li.current-cat a,
+aside.widget_categories ul li:hover a{color:#fff;}
+aside.widget_categories ul li a{
+	color:#333;
+	height:25px;
+	text-align: center;
+	display: block;
+	line-height: 25px;
+	border-bottom:none;
+}
+.cat-links a{
+	display:inline-block; 
+	border-bottom:none; 
+	border-radius:3px;
+	background-color:#EF4722;
+	padding:0 3px 0 3px;
+	color:#fff;
+} 
+.tag-links a{
+	display:inline-block; 
+	border-bottom:none; 
+	border-radius:3px;
+	background-color:#eee;
+	padding:0 3px 0 3px;
+	color:#333;
+} 

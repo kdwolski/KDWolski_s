@@ -39,7 +39,7 @@ function KDWolski_setup() {
 	/**
 	 * Custom Theme Options
 	 */
-	//require( get_template_directory() . '/inc/theme-options/theme-options.php' );
+	require( get_template_directory() . '/inc/theme-options/theme-options.php' );
 
 	/**
 	 * WordPress.com-specific functions and definitions
@@ -108,6 +108,13 @@ function KDWolski_scripts() {
 	global $post;
 
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
+
+	//content-sidebar containing theme mods
+	wp_register_style( 'content-sidebar', get_stylesheet_directory_uri() . '/layouts/content-sidebar.css' );
+	wp_enqueue_style( 'content-sidebar' );
+
+	wp_register_style( 'google-font', 'http://fonts.googleapis.com/css?family=Lustria' );
+	wp_enqueue_style( 'google-font' );
 
 	wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );
 
