@@ -53,6 +53,9 @@ aside h1{font-size:125%;}
 .entry-title a{color:#333; border-bottom:none;}
 h1.page-title{color:#ccc; font-size:140%;}
 
+hgroup{width:30%;}
+.main-navigation{margin-top: -30px;}
+
 /** Content **/
 div.entry-content{margin-top:0;}
 article.post{ padding-bottom:4%; border-bottom:3px solid #ccc;}
