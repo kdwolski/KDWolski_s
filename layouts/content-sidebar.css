@@ -35,7 +35,7 @@ h1.site-title{padding-top:15px;}
 header{height:100px;}
 .site-title a{border-bottom:none; font-size:24px; }
 .main-navigation ul{float: right; font-size:18px;}
-.main-navigation ul li{ margin:0; padding:0 10px 0 10px; border-right:1px solid #ccc;}
+.main-navigation ul li{ margin:0; padding:0 10px 0 10px;}
 .main-navigation ul li:last-child{border:none;}
 .main-navigation ul li a:hover{color:#ef4722;}
 div.site-description{font-size:22px;}
@@ -44,7 +44,41 @@ a,a:active,a:visited{color:#ef4722; border-bottom:1px dotted #ccc; text-decorati
 a:hover{color:#c83b1c;}
 
 .main-navigation li{margin:0 5px 0 5px;}
-.main-navigation li a{color:#000; border-bottom:none;}
+.main-navigation li a{color:#000; border-bottom:none;height:55px;}
+.main-navigation li ul li a{height:auto;}
+.main-navigation .sub-menu{background-color:#fff; top:2.6em;}
+
+
+.menu-toggle{position: absolute; top:40px; right:5%; }
+nav.main-small-navigation div.menu-primary-navigation-container{
+	position: absolute;
+	right:5%;
+	width:40%;
+	top:81px;
+	background-color:#f7f7f7;
+	border-bottom:3px solid #ef4722;
+}
+
+
+nav.main-small-navigation div.menu-primary-navigation-container #menu-primary-navigation,
+nav.main-small-navigation div.menu-primary-navigation-container #menu-primary-navigation ul{
+	margin:5px;
+	padding:0;
+	list-style-type:none;
+}
+
+nav.main-small-navigation div.menu-primary-navigation-container #menu-primary-navigation ul{
+	margin-left:10px;
+	border-left:1px solid #ccc;
+	padding-left:10px;
+}
+
+nav.main-small-navigation div.menu-primary-navigation-container #menu-primary-navigation li a{
+	border-bottom:none;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
 
 /** Headings **/
 h1,h2,h3,h4, .main-navigation, .site-description{font-family: 'Lustria', serif;}
@@ -52,6 +86,7 @@ h1{font-size:200%; font-weight:bold;}
 aside h1{font-size:125%;}
 .entry-title a{color:#333; border-bottom:none;}
 h1.page-title{color:#ccc; font-size:140%;}
+
 
 hgroup{width:30%;}
 .main-navigation{margin-top: -30px;}
@@ -62,6 +97,15 @@ article.post{ padding-bottom:4%; border-bottom:3px solid #ccc;}
 
 /** Sidebar **/
 #secondary{ padding-top: 5%;}
+
+form#searchform{background-color:#f7f7f7; border-bottom:3px solid #ef4722; padding:15px;}
+
+form#searchform input[type=text] {
+	padding:10px;
+	width:90%;
+	display: block;
+	margin:0 auto;
+}
 
 /** Category Widget **/
 aside.widget_categories ul{list-style-type: none; margin:0; padding:0px}
@@ -114,7 +158,7 @@ span.tagicon{
 } 
 
 /** Media Queries **/
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 620px) {
 
   .site-content{
   	float: none;
