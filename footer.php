@@ -16,7 +16,7 @@
 			<?php do_action( 'KDWolski_credits' ); ?>
 			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'KDWolski' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'KDWolski' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'KDWolski' ), 'KDWolski', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
+			<?php printf( __( 'Theme: %1$s by %2$s.', 'KDWolski' ), 'KDWolski', '<a href="http://kdwolski.com/" rel="designer">Kevin D. Wolski</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- .site-footer .site-footer -->
 </div><!-- #page .hfeed .site -->

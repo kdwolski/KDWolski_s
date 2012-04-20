@@ -31,7 +31,7 @@
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', 'KDWolski' ) );
+				$categories_list = get_the_category_list( __( ' ', 'KDWolski' ) );
 				if ( $categories_list && KDWolski_categorized_blog() ) :
 			?>
 			<span class="cat-links">
@@ -41,12 +41,12 @@
 
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', 'KDWolski' ) );
+				$tags_list = get_the_tag_list( '', __( ' ', 'KDWolski' ) );
 				if ( $tags_list ) :
 			?>
-			<span class="sep"> | </span>
+			<span class="sep tagicon"></span>
 			<span class="tag-links">
-				<?php printf( __( 'Tagged %1$s', 'KDWolski' ), $tags_list ); ?>
+				<?php echo $tags_list; ?>
 			</span>
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>

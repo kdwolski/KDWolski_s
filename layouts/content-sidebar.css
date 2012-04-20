@@ -93,7 +93,16 @@ aside.widget_categories ul li a{
 	background-color:#EF4722;
 	padding:0 3px 0 3px;
 	color:#fff;
+	margin-bottom:4px;
 } 
+
+span.tagicon{
+	background:transparent url(../img/tag.png) bottom center no-repeat;
+	display: inline-block;
+	height:25px;
+	width:15px;
+	margin:0 5px 0 10px;
+}
 .tag-links a{
 	display:inline-block; 
 	border-bottom:none; 
@@ -101,6 +110,7 @@ aside.widget_categories ul li a{
 	background-color:#eee;
 	padding:0 3px 0 3px;
 	color:#333;
+	margin-bottom:4px;
 } 
 
 /** Media Queries **/
