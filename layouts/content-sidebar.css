@@ -59,21 +59,28 @@ nav.main-small-navigation div.menu-primary-navigation-container{
 	border-bottom:3px solid #ef4722;
 }
 
-
-nav.main-small-navigation div.menu-primary-navigation-container #menu-primary-navigation,
-nav.main-small-navigation div.menu-primary-navigation-container #menu-primary-navigation ul{
-	margin:5px;
+nav.main-small-navigation div.menu-main-container,
+nav.main-small-navigation div.menu-main-container ul{
+	margin-left:5px;
 	padding:0;
-	list-style-type:none;
 }
 
-nav.main-small-navigation div.menu-primary-navigation-container #menu-primary-navigation ul{
+nav.main-small-navigation #menu-primary-navigation{
+	margin:5px;
+}
+
+nav.main-small-navigation #menu-primary-navigation ul{
 	margin-left:10px;
 	border-left:1px solid #ccc;
 	padding-left:10px;
+
 }
 
-nav.main-small-navigation div.menu-primary-navigation-container #menu-primary-navigation li a{
+nav.main-small-navigation #menu-primary-navigation li{
+	list-style-type:none;
+}
+
+nav.main-small-navigation #menu-primary-navigation li a{
 	border-bottom:none;
 	text-transform:uppercase;
 	font-weight:bold;
@@ -159,6 +166,9 @@ span.tagicon{
 
 /** Media Queries **/
 @media screen and (max-width: 620px) {
+	body{
+		font-size:13px;
+	}
 
   .site-content{
   	float: none;
