@@ -110,8 +110,8 @@ hgroup{width:30%;}
 .main-navigation{margin-top: -30px;}
 
 /** Content **/
-div.entry-meta{margin:10px 0 10px 0; opacity: 0.5;
--moz-opacity: 0.5;
+div.entry-meta{margin:10px 0 10px 0; opacity: 0.8;
+-moz-opacity: 0.8;
 filter:alpha(opacity=5);}
 div.entry-meta:hover{opacity:1;
 -moz-opacity:1;
