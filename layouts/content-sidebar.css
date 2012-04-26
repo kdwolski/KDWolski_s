@@ -113,6 +113,9 @@ hgroup{width:30%;}
 div.entry-meta{margin:10px 0 10px 0; opacity: 0.5;
 -moz-opacity: 0.5;
 filter:alpha(opacity=5);}
+div.entry-meta:hover{opacity:1;
+-moz-opacity:1;
+filter:alpha(opacity=1);}
 div.entry-content{margin-top:10px;}
 article.post{ padding-bottom:4%; border-bottom:3px solid #ccc;}
 
