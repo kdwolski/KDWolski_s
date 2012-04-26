@@ -28,21 +28,31 @@ Layout: Content-Sidebar
 /* KDWolski Mods
 ----------------------------------------------- */
 body{background:url(../img/top-bar.png) repeat-x; font-family:Georgia serif;}
+p{margin-top:0;}
+
+/* responsive */
+img,
+object,
+video {
+  max-width: 100%;
+}
+
 h1.site-title a span{display: none;}
 h1.site-title a {background: transparent url(../img/kdwolski.png) no-repeat; height:48px; width:190px; display: block;}
 h1.site-title{padding-top:15px;}
-.entry-content, .entry-summary {font-size:125%; line-height:175%;}
+.entry-content, .entry-summary {font-size:1.8rem; line-height:175%;}
 header{height:100px;}
-.site-title a{border-bottom:none; font-size:24px; }
-.main-navigation ul{float: right; font-size:18px;}
+.site-title a{border-bottom:none; font-size:2.4rem; }
+.main-navigation ul{float: right; font-size:1.8rem;}
 .main-navigation ul li{ margin:0; padding:0 10px 0 10px;}
 .main-navigation ul li:last-child{border:none;}
 .main-navigation ul li a:hover{color:#ef4722;}
-div.site-description{font-size:22px;}
+div.site-description{font-size:2.2rem;}
 #page{width:80%; margin:0 auto;}
 a,a:active,a:visited{color:#ef4722; border-bottom:1px dotted #ccc; text-decoration: none;}
 a:hover{color:#c83b1c;}
 
+.main-navigation{ width:80%; float:right;}
 .main-navigation li{margin:0 5px 0 5px;}
 .main-navigation li a{color:#000; border-bottom:none;height:55px;}
 .main-navigation li ul li a{height:auto;}
@@ -89,17 +99,21 @@ nav.main-small-navigation #menu-primary-navigation li a{
 
 /** Headings **/
 h1,h2,h3,h4, .main-navigation, .site-description{font-family: 'Lustria', serif;}
-h1{font-size:200%; font-weight:bold;}
-aside h1{font-size:125%;}
+h1{font-size:3.6rem; color:#000; line-height:3.8rem; }
+h1 a:hover{color:#ef4722;}
+aside h1{font-size:1.8rem;}
 .entry-title a{color:#333; border-bottom:none;}
-h1.page-title{color:#ccc; font-size:140%;}
+h1.page-title{color:#ccc; font-size:2.2rem;}
 
 
 hgroup{width:30%;}
 .main-navigation{margin-top: -30px;}
 
 /** Content **/
-div.entry-content{margin-top:0;}
+div.entry-meta{margin:10px 0 10px 0; opacity: 0.5;
+-moz-opacity: 0.5;
+filter:alpha(opacity=5);}
+div.entry-content{margin-top:10px;}
 article.post{ padding-bottom:4%; border-bottom:3px solid #ccc;}
 
 /** Sidebar **/
@@ -164,10 +178,13 @@ span.tagicon{
 	margin-bottom:4px;
 } 
 
+.featured-image{float:left; margin:0 2% 2% 0;}
+
+
 /** Media Queries **/
 @media screen and (max-width: 620px) {
 	body{
-		font-size:13px;
+		/*font-size:13px;*/
 	}
 
   .site-content{

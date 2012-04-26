@@ -50,3 +50,22 @@ function KDWolski_enhanced_image_navigation( $url, $id ) {
 	return $url;
 }
 add_filter( 'attachment_link', 'KDWolski_enhanced_image_navigation', 10, 2 );
+
+/**
+ * KDWolski Customizations
+ */
+
+/**
+ * RESPONSIVE IMAGE FUNCTIONS
+ * @author  David Smith <http://www.netmagazine.com/tutorials/getting-wordpress-play-nice-responsive-images>
+ */
+ 
+add_filter( 'post_thumbnail_html', 'KDWolski_remove_thumbnail_dimensions', 10 );
+add_filter( 'image_send_to_editor', 'KDWolski_remove_thumbnail_dimensions', 10 );
+ 
+function KDWolski_remove_thumbnail_dimensions( $html ) {
+        $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+        return $html;
+}
+
+

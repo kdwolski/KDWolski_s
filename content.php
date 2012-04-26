@@ -15,6 +15,18 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
+	<?php 
+		// Get the featured image
+	if( has_post_thumbnail($post->ID)){
+		$image_id = get_post_thumbnail_id();  
+
+		$featured_img = wp_get_attachment_image_src( $image_id, 'KDWolski-featured' );
+		$featured_img = $featured_img[0];	
+	?>
+
+	<img class="featured-image" src="<?php echo $featured_img; ?>"  title="<?php the_title(); ?>"  />
+
+	<?php } //end featured image ?>
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 	<div class="entry-summary">

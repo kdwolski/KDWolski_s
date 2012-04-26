@@ -68,7 +68,8 @@ function KDWolski_setup() {
 	 * Enable support for Post Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
-
+	add_image_size( 'KDWolski-featured-small', 220, 180, true ); //(cropped)
+	add_image_size( 'KDWolski-featured', 320, 9999, false ); 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
 	 */
@@ -117,6 +118,7 @@ function KDWolski_scripts() {
 	wp_enqueue_style( 'google-font' );
 
 	wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );
+	wp_enqueue_script( 'responsive-images', get_template_directory_uri() . '/js/responsive-images.js', array( 'jquery' ), '20120424' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -132,3 +134,4 @@ add_action( 'wp_enqueue_scripts', 'KDWolski_scripts' );
  * Implement the Custom Header feature
  */
 //require( get_template_directory() . '/inc/custom-header.php' );
+
