@@ -59,7 +59,8 @@ a:hover{color:#c83b1c;}
 .main-navigation .sub-menu{background-color:#fff; top:2.6em;}
 
 
-.menu-toggle{position: absolute; top:40px; right:5%; }
+.menu-toggle{position: absolute; top:15px; right:5%; height:52px; width:125px; background:transparent url(../img/mob-menu.png) no-repeat;}
+.menu-toggle span{display: none;}
 nav.main-small-navigation div.menu-primary-navigation-container{
 	position: absolute;
 	right:5%;
@@ -186,9 +187,8 @@ span.tagicon{
 
 /** Media Queries **/
 @media screen and (max-width: 620px) {
-	body{
-		/*font-size:13px;*/
-	}
+	
+	html{font-size: 52.5%;} /*experimental*/
 
   .site-content{
   	float: none;

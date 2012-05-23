@@ -52,7 +52,7 @@
 		</hgroup>
 
 		<nav role="navigation" class="site-navigation main-navigation">
-			<h1 class="assistive-text"><?php _e( 'Menu', 'KDWolski' ); ?></h1>
+			<h1 class="assistive-text"><?php _e( '<span>Menu</span>', 'KDWolski' ); ?></h1>
 			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'KDWolski' ); ?>"><?php _e( 'Skip to content', 'KDWolski' ); ?></a></div>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
