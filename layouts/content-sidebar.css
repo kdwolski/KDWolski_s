@@ -59,7 +59,7 @@ a:hover{color:#c83b1c;}
 .main-navigation .sub-menu{background-color:#fff; top:2.6em;}
 
 
-.menu-toggle{position: absolute; top:15px; right:5%; height:52px; width:125px; background:transparent url(../img/mob-menu.png) no-repeat;}
+.menu-toggle{position: absolute; top:25px; right:5%; height:40px; width:40px; background:transparent url(../img/mob-menu.png) no-repeat;}
 .menu-toggle span{display: none;}
 nav.main-small-navigation div.menu-primary-navigation-container{
 	position: absolute;
