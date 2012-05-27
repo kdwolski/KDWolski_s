@@ -38,7 +38,7 @@ video {
 }
 
 h1.site-title a span{display: none;}
-h1.site-title a {background: transparent url(../img/kdwolski.png) no-repeat; height:48px; width:190px; display: block;}
+h1.site-title a {background: transparent url(../img/kdwolski.png) no-repeat; height:48px; width:190px; display: block; border:none;}
 h1.site-title{padding-top:15px;}
 .entry-content, .entry-summary {font-size:1.8rem; line-height:175%;}
 header{height:100px;}

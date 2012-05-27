@@ -56,10 +56,12 @@
 				$tags_list = get_the_tag_list( '', __( ' ', 'KDWolski' ) );
 				if ( $tags_list ) :
 			?>
-			<span class="sep tagicon"></span>
-			<span class="tag-links">
-				<?php echo $tags_list; ?>
-			</span>
+			<p>
+				<span class="sep tagicon"></span>
+				<span class="tag-links">
+					<?php echo $tags_list; ?>
+				</span>
+			</p>
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
 
